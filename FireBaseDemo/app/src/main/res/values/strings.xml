@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FireBaseDemo</string>
+    <string name="Note_Title">Title</string>
+    <string name="Note_Body">Body</string>
+    <string name="Next">Next</string>
+    <string name="Cancel">Cancel</string>
+    <string name="authentication"><![CDATA[Register&Login]]></string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+</resources>

@@ -55,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
         previous=findViewById(R.id.perviousBtn);
         next=findViewById(R.id.nextBtn);
         countryImage=findViewById(R.id.flagimageView);
+
         myCountryList=jsonHandler.getCountriesList();
+        Thread updater= new Thread(jsonHandler);
+        updater.start();
 
         handler=new Handler(){
 
@@ -74,8 +77,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-        Thread updater= new Thread(jsonHandler);
-        updater.start();
 
 
 
